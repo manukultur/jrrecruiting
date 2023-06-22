@@ -7,10 +7,8 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
-  TwitterIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/av_salad.jpg'
 import image2 from '@/images/photos/butcher_jr.png'
@@ -221,7 +219,7 @@ export default function Home() {
             Come work at <span className='line-through'>one</span> two of the best restaurants in town.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            We're expanding the team and all positions are welcome. Are you driven by perfection? Do you love to feed people? Are you intrinsically motivated to perform every day? Do you want to spend your time making amazing French food? Then join us. Give us a call or shoot us a text or email.
+            We&apos;re expanding the team and all positions are welcome. Are you driven by perfection? Do you love to feed people? Are you intrinsically motivated to perform every day? Do you want to spend your time making amazing French food? Then join us. Give us a call or shoot us a text or email.
           </p>
           
           <div className="flex gap-6 mt-6">

@@ -55,8 +55,8 @@ export default function Uses() {
         <div className="space-y-20">
           <ArticleSection title="Magazines">
             {articles.map((article, articleIdx) => (
-            <a href={article.url} target='_blank'>
-            <Article key={articleIdx} title={article.title}>
+            <a key={articleIdx} href={article.url} target='_blank' rel="noreferrer">
+            <Article  title={article.title}>
                 <p>{article.excerpt}</p>
                 <div className='pt-4'>
                   <strong>{article.author}</strong>, {article.publication}<br/>{article.date}
