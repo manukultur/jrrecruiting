@@ -19,8 +19,6 @@ import babLogo from '@/images/logos/bab.jpg'
 import fcLogo from '@/images/logos/fc.png'
 
 
-
-
 function BriefcaseIcon(props) {
   return (
     <svg
@@ -59,18 +57,17 @@ function ArrowDownIcon(props) {
 
 let articles = [
   {
-    header: 'Eaten up with Frenchness',
-    title: 'Dilligence',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',   
+    title: 'Great hours, flexible schedules',
+    description: 'We will work with your needs. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',   
   },
   {
     header: 'Eaten up with Frenchness',
-    title: 'Honesty',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',   
+    title: 'Primary Care',
+    description: 'Our partners at Next Direct offer same-day service for ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',   
   },
   {
     header: 'Eaten up with Frenchness',
-    title: 'Fairness',
+    title: 'Employee Discounts',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',   
   },
 
@@ -206,11 +203,11 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Jean-Robert Restaurant Group - Recruiting
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="Making people happy since 1993."
         />
       </Head>
       <Container className="mt-9">
@@ -241,7 +238,11 @@ export default function Home() {
       <Container className="mt-24 md:mt-28">
         <div className="grid max-w-xl grid-cols-1 mx-auto gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-          <div className='flex gap-6 mt-6'>
+          
+            {articles.map((article) => (
+              <Article key={article.slug} article={article} />
+            ))}
+            <div className='flex gap-6 mt-6'>
             <div className='relative h-40 aspect-square'>
           <Image
               src={babLogo}
@@ -259,9 +260,6 @@ export default function Home() {
             />
             </div>
           </div>
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Positions />

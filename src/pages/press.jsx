@@ -37,7 +37,6 @@ let articles = [
 
 ]
 
-
 export default function Uses() {
   return (
     <>
