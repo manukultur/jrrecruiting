@@ -13,8 +13,8 @@ import {
 import image1 from '@/images/photos/av_salad.jpg'
 import image2 from '@/images/photos/butcher_jr.png'
 import image3 from '@/images/photos/fish.jpg'
-import image4 from '@/images/photos/tartar.jpg'
-import image5 from '@/images/photos/bread.jpg'
+import image4 from '@/images/photos/interior.jpg'
+import image5 from '@/images/photos/tartar.jpg'
 import babLogo from '@/images/logos/bab.jpg'
 import fcLogo from '@/images/logos/fc.png'
 
