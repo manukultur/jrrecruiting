@@ -10,16 +10,16 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/photos/jean-robert-de-cavel.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="flex text-sm font-medium transition group text-zinc-800 hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
-        <Icon className="flex-none w-6 h-6 transition fill-zinc-500 group-hover:fill-teal-500" />
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -41,10 +41,12 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - The Jean-Robert Restaurant Group</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content="As we embark on a new chapter in culinary experiences, we honor the legacy of Jean-Robert de Cavel a legendary French
+          chef whose passion and love of food brought us together in the
+          simple act of sharing a meal around a table."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -55,7 +57,7 @@ export default function About() {
                 src={portraitImage}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="object-cover aspect-square rotate-3 rounded-2xl bg-zinc-100 dark:bg-zinc-800"
+                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
           </div>
@@ -63,35 +65,45 @@ export default function About() {
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               The Jean-Robert Restaurant Group
             </h1>
-            <div className="mt-6 text-base space-y-7 text-zinc-600 dark:text-zinc-400">
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                We believe that food is LOVE, a sentiment that transcends
+                borders and cultures, connecting us to each other in profound
+                and meaningful ways.{' '}
               </p>
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Our mission is to honor the traditions and techniques of French
+                culinary excellence while incorporating innovative and modern
+                approaches that are accessible to all.{' '}
               </p>
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. mollit anim id est laborum.
+                As we embark on a new chapter in culinary experiences, we honor
+                the legacy of <strong>Jean-Robert de Cavel</strong> a legendary
+                French chef whose passion and love of food brought us together
+                in the simple act of sharing a meal around a table.
               </p>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              <p className="mt-4">
+                Read about the{' '}
+                <Link href="/principles" className="underline">
+                  principles
+                </Link>{' '}
+                we live by.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              
               <SocialLink href="#" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
               </SocialLink>
-             
+
               <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
                 href="mailto:careers@jrcincy.com"
                 icon={MailIcon}
-                className="pt-8 mt-8 border-t border-zinc-100 dark:border-zinc-700/40"
+                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
                 careers@jrcincy.com
               </SocialLink>

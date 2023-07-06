@@ -18,7 +18,6 @@ function Appearance({ title, description, event, cta, href }) {
       <Card.Title as="h3" href={href}>
         {title}
       </Card.Title>
-      <Card.Eyebrow decorate>{event}</Card.Eyebrow>
       <Card.Description>{description}</Card.Description>
     </Card>
   )
@@ -28,35 +27,47 @@ export default function Speaking() {
   return (
     <>
       <Head>
-        <title>Our manifesto at Jean-Robert Restaurant Group</title>
+        <title>Principles we live by</title>
         <meta
           name="description"
-          content="Our manifesto at Jean-Robert Restaurant Group"
+          content="Principles we live by at Jean-Robert Restaurant Group"
         />
       </Head>
       <SimpleLayout
-        title="Our manifesto at Jean-Robert Restaurant Group"
+        title="Principles we live by."
         intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       >
         <div className="space-y-20">
           <SpeakingSection title="Lorem ipsum">
             <Appearance
               href="#"
-              title="Lorem ipsum dolor sit amet"
+              title="Every meal is an opportunity"
               description="
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.               "
+                We believe that every meal is an opportunity to create something
+                special and unique, crafted with the highest quality ingredients
+                and presented with care and attention to detail.
+
+"
             />
             <Appearance
               href="#"
-              title="Lorem ipsum dolor sit amet"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+              title="Good food, good company"
+              description="              
+              We are committed to creating a warm and welcoming atmosphere,
+              where our guests feel at home and surrounded by the warmth and
+              comfort of good food and good company.
+            "
             />
           </SpeakingSection>
           <SpeakingSection title="Lorem ipsum">
             <Appearance
               href="#"
-              title="Lorem ipsum dolor sit amet"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. taria."
+              title="Forever learning to delight."
+              description="
+              We are forever learning and thriving committing ourselves to
+              never giving up on this belief, and to continue to develop
+              experiences that bring joy, pleasure, and delight to our guests.
+            "
             />
             <Appearance
               href="#"
